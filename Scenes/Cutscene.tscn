@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://coniimyi0ybt4"]
+
+[ext_resource type="Script" path="res://Scenes/DialogueSystem.gd" id="1_c1xi3"]
+
+[node name="DialogueSystem" type="Control" unique_id=1901205687 node_paths=PackedStringArray("char_text", "char_name")]
+layout_mode = 3
+anchor_right = 0.186
+anchor_bottom = 0.272
+offset_left = 214.0
+offset_top = 548.0
+offset_right = 827.88
+offset_bottom = 402.24
+script = ExtResource("1_c1xi3")
+char_text = NodePath("Base/VBoxContainer/Text")
+char_name = NodePath("Base/VBoxContainer/Name")
+
+[node name="Base" type="CanvasLayer" parent="." unique_id=558838805]
+follow_viewport_scale = 100.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Base" unique_id=1388205486]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="Name" type="Label" parent="Base/VBoxContainer" unique_id=968708325]
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Base/VBoxContainer" unique_id=124865062]
+layout_mode = 2

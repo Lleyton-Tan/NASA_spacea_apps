@@ -1,0 +1,22 @@
+{
+  "line_1": {
+	"text": "Excuse me wanderer where can I find the bathroom?",
+	"name": "Ryan Gosling",
+	"next": "line_2"
+  },
+  "line_2": {
+	"text": "Why do we not look like the others?",
+	"name": "Ryan Gosling",
+	"next": "line_3"
+  },
+  "line_3": {
+	"text": "Because we are free assets from opengameart!",
+	"name": "Stranger",
+	"next": "line_4"
+  },
+  "line_4": {
+	"text": "Thanks for watching!",
+	"name": "Ryan Gosling",
+	"next": ""
+  }
+}
