@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://2swb2t3b3225"]
+
+[ext_resource type="Script" uid="uid://60yde6kyn3q3" path="res://Scenes/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://7vhkt1hngww4" path="res://Art/other/space.png" id="2_48xlc"]
+[ext_resource type="FontFile" uid="uid://cx6vjtmin1u3j" path="res://Art/ByteBounce.ttf" id="3_1ehe0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rpy7r"]
+bg_color = Color(1, 1, 1, 0.28627452)
+
+[node name="MainMenu" type="Control" unique_id=1961329187]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Background" type="TextureRect" parent="." unique_id=290043078]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_48xlc")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=389010374]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=475815963]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1162961914]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 78
+text = "SPACE APP
+60 SECONDS TO MARS"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1931721808]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 78
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpy7r")
+text = "START GAME"
